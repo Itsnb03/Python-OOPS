@@ -9,4 +9,4 @@ print(my_car.model) #print function for model
 
 my_new_car = Car("Mahindra","XUV")
 print(my_new_car.brand)
-print(my_new_car.model)
+print(my_new_car.model) 
