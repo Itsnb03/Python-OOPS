@@ -10,6 +10,11 @@ class Student:
     def full_detail(self):
         return f"{self.rollno} {self.firstname} {self.lastname} {self.course} {self.div} {self.address} "
     
+class New_admission(Student):
+    def __init__(self, rollno, firstname, lastname, course, div, address, gender, dissability):
+        super().__init__(rollno, firstname, lastname, course, div, address)
+        self.gender = gender
+        self.dissability = dissability
 
 std1 = Student("1", "Nitin", "Bharadwaj", "BSCIT", "A", "Borivali")
 print(std1.full_detail())
@@ -28,3 +33,7 @@ print(std2.lastname)
 print(std2.course)
 print(std2.div)
 print(std2.address)
+
+newstd = New_admission("7", "Dev", "Gandhi", "BSCIT", "A", "Dahanu", "Male", "No")
+print(newstd.gender)
+print(newstd.dissability)
