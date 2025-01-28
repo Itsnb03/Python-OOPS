@@ -1,0 +1,10 @@
+class One_1:
+    a=10
+class Two_2(One_1):
+    pass
+class Three_3(Two_2):
+    pass
+class Four_4(Three_3):
+    pass
+objFour=Four_4
+print

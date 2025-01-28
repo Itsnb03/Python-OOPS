@@ -10,7 +10,7 @@ class Student:
     def full_detail(self):
         return f"{self.rollno} {self.firstname} {self.lastname} {self.course} {self.div} {self.address} "
     
-class New_admission(Student):
+class New_admission(Student): 
     def __init__(self, rollno, firstname, lastname, course, div, address, gender, dissability):
         super().__init__(rollno, firstname, lastname, course, div, address)
         self.gender = gender
