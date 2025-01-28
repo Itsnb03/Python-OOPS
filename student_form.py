@@ -1,11 +1,14 @@
 class Student:
     def __init__(self, rollno, firstname, lastname, course, div,address):
-        self.rollno = rollno
+        self.__rollno = rollno
         self.firstname = firstname
         self.lastname = lastname
         self.course = course
         self.div = div
         self.address=address
+        
+    def get_rollno(self):
+        return self.__rollno +"."
         
     def full_detail(self):
         return f"{self.rollno} {self.firstname} {self.lastname} {self.course} {self.div} {self.address} "
@@ -17,8 +20,8 @@ class New_admission(Student):
         self.dissability = dissability
 
 std1 = Student("1", "Nitin", "Bharadwaj", "BSCIT", "A", "Borivali")
-print(std1.full_detail())
-print(std1.rollno)
+# print(std1.full_detail())
+print(std1.get_rollno())
 print(std1.firstname)
 print(std1.lastname)
 print(std1.course)
@@ -26,8 +29,8 @@ print(std1.div)
 print(std1.address)
 
 std2 = Student("2", "Aman", "Singh", "BCSIT", "A", "Kandivali")
-print(std2.full_detail())
-print(std2.rollno)
+# print(std2.full_detail())
+print(std2.get_rollno())
 print(std2.firstname)
 print(std2.lastname)
 print(std2.course)
